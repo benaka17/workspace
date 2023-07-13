@@ -17,7 +17,7 @@ public class Booking {
     @Schema(readOnly = true)
     private long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="myDate")
     @NotNull
     private LocalDate date;
 
@@ -26,6 +26,9 @@ public class Booking {
 
     @Column(nullable = false)
     private int duration;
+
+    @Column(nullable = false)
+    private boolean smoker;
 
     @ManyToOne
     private ApplicationUser applicationUser;
@@ -79,6 +82,14 @@ public class Booking {
         this.duration = duration;
     }
 
-  
+    public boolean isSmoker() {
+        return smoker;
+    }
+
+    public void setSmoker(boolean smoker) {
+        this.smoker = smoker;
+    }
+
+    
 
 }

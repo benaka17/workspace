@@ -2,6 +2,8 @@ package ch.zli.m223.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,15 +22,21 @@ public class ApplicationUser {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Schema(readOnly = true)
   private Long id;
+
+  @Column(nullable = false)
+  private String firstname;
+
+  @Column(nullable = false)
+  private String lastname;
   
-  @Column(nullable = false, unique = true)
+  @Column(nullable = false)
   private String email;
 
   @Column(nullable = false)
   private String password;
 
-  @Column
-  private String nickname;
+  @Enumerated(EnumType.STRING)
+  private RoleEnum role;
 
   public Long getId() {
     return id;
@@ -54,11 +62,31 @@ public class ApplicationUser {
     this.password = password;
   }
 
-  public String getNickname() {
-    return nickname;
+  public String getFirstname() {
+    return firstname;
   }
 
-  public void setNickname(String nickname) {
-    this.nickname = nickname;
+  public void setFirstname(String firstname) {
+    this.firstname = firstname;
   }
+
+  public String getLastname() {
+    return lastname;
+  }
+
+  public void setLastname(String lastname) {
+    this.lastname = lastname;
+  }
+
+  public RoleEnum getRole() {
+    return role;
+  }
+
+  public void setRole(RoleEnum role) {
+    this.role = role;
+  }
+
+  
+
+  
 }
