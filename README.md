@@ -37,4 +37,4 @@ Die Testfälle wurden mit [Postman](https://www.postman.com/) gemacht und man fi
 
 - Vorlage für das ganze Projekt [4.2 Lösungsvorschlag](https://moodle.zli.ch/mod/resource/view.php?id=121212)
 - Um Error-Messages zu interpretieren [ChatGPT](https://https://chat.openai.com/)
-- Das Pre-Script wurde von Nadim Bhatti erstellt
+- Das Pre-Request-Script wurde von Nadim Bhatti erstellt
