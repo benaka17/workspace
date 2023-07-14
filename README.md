@@ -30,4 +30,11 @@ Der Webservice ist über Port **8080** erreichbar. Alle Testfälle laufen über 
 
 ## Testdaten
 
-Die automatisch eingeführten Testdaten werden in `TestDataService.java` gefunden.
+Die automatisch eingeführten Testdaten werden in `TestDataService.java` gefunden.\
+Die Testfälle wurden mit [Postman](https://www.postman.com/) gemacht und man findet sie unter `src/Postman/CoworkingSpace.postman_collection.json`
+
+## Quellen
+
+- Vorlage für das ganze Projekt [4.2 Lösungsvorschlag](https://moodle.zli.ch/mod/resource/view.php?id=121212)
+- Um Error-Messages zu interpretieren [ChatGPT](https://https://chat.openai.com/)
+- Das Pre-Script wurde von Nadim Bhatti erstellt
