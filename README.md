@@ -18,7 +18,7 @@ Die Entwicklungsumgebung ist in [Development Containern](https://containers.dev/
 ## Projekt starten
 
 Gestartet werden kann das Projekt mit der Quarkus Visual Studio Code Extension über den
-Befehl `Quarkus: Debug current Quarkus project`.
+Befehl `Quarkus: Debug Quarkus project`.
 
 Alternativ kann das Projekt auch direkt über Maven gestartet werden.
 
