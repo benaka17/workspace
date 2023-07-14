@@ -1,11 +1,33 @@
-# LB Teil B: Coworking-Space
-This is a Coworking-Space Management System for Bookings and the Users implemented with Quarkus.
+# Coworking Space 
 
-## Setup
-First you need the project inside of a Dev Container. After that, I advise you to reload the window with Ctrl + Shift + P and "Reload Window". Now you should be good to go, assuming you have already installed Quarkus.
+Dieses Projekt ist ein Management-System für Buchungen und die Benutzer eines Coworking Spaces, welches mit Quarkus entwickelt wird.
 
-## Launch
-In VS Code, Ctrl + Shift + P and then ">Debug Quarkus" should do the job.
+## Projekt aufsetzen
+Stellen Sie sicher, dass die folgenden Software auf Ihrem System installiert ist:
 
-## Testdata
-The testdata can be passed through the TestDataService into the database. There are two users and a booking already implemented.
+- Visual Studio Code
+- Java Development Kit (JDK 17)
+- Maven (3.9.2)
+
+1. Klonen Sie dieses Repository auf Ihr lokales System mit `git clone <repository-url>`.
+
+Die Entwicklungsumgebung ist in [Development Containern](https://containers.dev/) organisiert.
+
+2. Um den Dev Container zu starten, laden Sie bitte die VS Code Extension [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) herunter. Die Dienste starten dann automatisch.
+
+## Projekt starten
+
+Gestartet werden kann das Projekt mit der Quarkus Visual Studio Code Extension über den
+Befehl `Quarkus: Debug current Quarkus project`.
+
+Alternativ kann das Projekt auch direkt über Maven gestartet werden.
+
+```bash
+./mvnw quarkus:dev
+```
+
+Der Webservice ist über Port **8080** erreichbar. Alle Testfälle laufen über diesen Port.
+
+## Testdaten
+
+Die automatisch eingeführten Testdaten werden in `TestDataService.java` gefunden.
