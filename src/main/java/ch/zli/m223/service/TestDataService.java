@@ -46,7 +46,6 @@ public class TestDataService {
     booking.setSmoker(true);
     entityManager.persist(booking);
     
-
   }
 
 }
